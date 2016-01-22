@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Equip {
+public class Equip implements Comparable<Equip> {
 
 	private String nom;
 	private List<Jugador> jugadors = new ArrayList<Jugador>();
@@ -50,6 +50,20 @@ public class Equip {
 			System.out.println("	" + jugadors.get(i).getNom() + ": " + jugadors.get(i).getGols());
 			
 		}
-		
 	}
+	
+	public int compareTo(Equip e) {
+
+		if (totalGols() > e.totalGols()) {
+
+			return -1;
+
+		} else if (totalGols() < e.totalGols()) {
+
+			return 1;
+		}
+
+		return 0;
+	}
+	
 }

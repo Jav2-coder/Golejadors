@@ -1,6 +1,6 @@
 package net.javierjimenez;
 
-public class Jugador  implements Comparable<Jugador> {
+public class Jugador implements Comparable<Jugador> {
 
 	private String nom;
 	private int gols;
