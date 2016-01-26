@@ -16,8 +16,20 @@ import org.xml.sax.SAXException;
  */
 public class App {
 
+	/**
+	 * Variable String que conte el directori i el nom del fitxer XML
+	 */
 	private static String FITXER = "/golejadors.xml";
 
+	/**
+	 * Metode principal que llegeix la informacio de l'arxiu xml mitjançant un
+	 * parser.
+	 * 
+	 * @param args
+	 * @throws ParserConfigurationException
+	 * @throws SAXException
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 
 		SAXParserFactory spf = SAXParserFactory.newInstance();
