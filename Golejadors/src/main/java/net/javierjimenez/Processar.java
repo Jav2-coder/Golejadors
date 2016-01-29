@@ -106,6 +106,12 @@ public class Processar extends DefaultHandler {
 		}
 	}
 
+	/**
+	 * Metode de lectura de documents XML on, al tancar cada etiqueta, 
+	 * posara a false els booleans encarregats de capturar un conjunt
+	 * d'etiquetes, creara un equip de futbol nou i afegira un jugador 
+	 * dins o, si existeix aquest equip, afegira un jugador dins del mateix.
+	 */
 	public void endElement(String uri, String localName, String qName) {
 
 		switch (qName) {
